@@ -96,7 +96,6 @@ extern uint8_t SmallFont[];
 // Remember to change the model parameter to suit your display module!
 
 //UTFT    myGLCD(ITDB32S,38,39,40,41); //TFT_320QVT
-//UTFT    myGLCD(ITDB32WC,38,39,40,41); //TFT_320QVT_9341
 UTFT    myGLCD(ILI9341_16,38,39,40,41); //TFT_320QVT_9341
 
 // Initialize touchscreen

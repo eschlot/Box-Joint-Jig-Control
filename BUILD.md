@@ -42,7 +42,7 @@ To build the project the following steps have to be taken (Windows 10):
 	* Go to Sketch->Upload. If that succeeds, the Controller is ready to go. 
 		
 10. If the TFT only lights up, but does not show anything, then You have most probably a different TFT driver chip on Your display. As a consequence comment line 99 in the file PositionControl.ino and uncomment line 98. Go to step 8 and repeat the process. Good luck. 
-	* If all this fails, than You are in trouble. The sources of errors for the display are numerous and it might be a contact problem or the wrong driver, or ... The only thing You can do is to search the internet for a solution and to debug the display driver.  
+	* **If all this fails, than You are in trouble. The sources of errors for the display are numerous and it might be a contact problem or the wrong driver, or ... The only thing You can do is to search the internet for a solution and to debug the display driver.**  
 	
  
 

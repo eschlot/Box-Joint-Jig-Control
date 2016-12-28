@@ -13,12 +13,13 @@ This software is not a product. By compiling this software and bringing it to a 
 
 The process to take everything into operation is not simple. But it is also not rocket science. 
 
-if You have some knowledge in electronics and are able to solder some cables for electronics and You know how to use a normal PC, than You have a fair chance to get erverything right. 
+If You have some knowledge in electronics and are able to solder some cables for electronics and You know how to use a normal PC, than You have a fair chance to get erverything right. 
 
 If You are unsure if You can do this then go step by step: 
-1. Do not buy anything. Simply follow the details in BUILD.md file till point 8. If You succeed in this, than it is only a little step to program the micro controller board and You are ready to order the Arduino Due board, the adapter and the TFT. 
-2. Once You have received the board, then You can program the board and take the software into operation. This is the most critical point: If the display shows up and You have the user interaction working, than it is relativly easy to connect the stepper motor. If You have problems with the display and also Step 10 in Build.md does not help, it is really a problem and nobody can help You with this without physical access to the setup. Till here You might have spend some 35€. This is a clear risk if You have no real in depth knowledge in electronics and computer science.  
-3. Then it is time to order a stepper motor and a driver and all the other surrounding hardware, like a power supply, etc. and to build the actual jig.       
+
+1.  Do not buy anything. Simply follow the details in BUILD.md file till point 8. If You succeed in this, than it is only a little step to program the micro controller board and You are ready to order the Arduino Due board, the adapter and the TFT. 
+2.  Once You have received the board, then You can program the board and take the software into operation. This is the most critical point: If the display shows up and You have the user interaction working, than it is relativly easy to connect the stepper motor. If You have problems with the display and also Step 10 in Build.md does not help, it is really a problem and nobody can help You with this without physical access to the setup. Till here You might have spend some 35€. This is a clear risk if You have no real in depth knowledge in electronics and computer science.  
+3.  Then it is time to order a stepper motor and a driver and all the other surrounding hardware, like a power supply, etc. and to build the actual jig.       
 
  
 
