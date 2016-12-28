@@ -28,11 +28,11 @@ This software reqires some other open source software packages. Without the cont
  
 1. UTFT (Author:  Henning Karlsen under Creative Commons (CC BY-NC-SA 3.0)): for the control of the TFT display
 2. URTouch  (Autor:  Henning Karlsen under Creative Commons (CC BY-NC-SA 3.0)): used for the evaluation of the touch display
-3. TFT_Extension (Autor: Andrew Mascolo Jr unter MIT Lizenz): for the buttons on the display 
-4. DueTimer (Autor: Ivan Seidel unter MIT Lizenz): For the generation of the signal to the Stepper motor driver by timer interrupts
-5. DueFlashStorage (Autor: Sebastian Nilsson unter MIT Lizenz): To store the entered data persisitent. 
-6. EFC Flash Treiber (Autor: Atmel Corporation unter ASF Lizenz): For the HW access of the DueFlashStorage module to the concrete Flash Hardware
-7. LinkedList (Autor: Ivan Seidel unter MIT Lizenz): for the internal handling of the entered data and the calculated positions for the cuts.
+3. TFT_Extension (Autor: Andrew Mascolo Jr unter MIT License): for the buttons on the display 
+4. DueTimer (Autor: Ivan Seidel under MIT License): For the generation of the signal to the Stepper motor driver by timer interrupts
+5. DueFlashStorage (Autor: Sebastian Nilsson under MIT License): To store the entered data persisitent. 
+6. EFC Flash Treiber (Autor: Atmel Corporation under ASF License): For the HW access of the DueFlashStorage module to the concrete Flash Hardware
+7. LinkedList (Autor: Ivan Seidel under MIT License): for the internal handling of the entered data and the calculated positions for the cuts.
 
 
 
