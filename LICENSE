@@ -1,5 +1,5 @@
-Mozilla Public License Version 2.0
-==================================
+Mozilla Public License Version 2.0 with extensions for safety
+=============================================================
 
 1. Definitions
 --------------
@@ -297,6 +297,13 @@ prior to termination shall survive termination.
 *  jurisdictions do not allow the exclusion or limitation of           *
 *  incidental or consequential damages, so this exclusion and          *
 *  limitation may not apply to You.                                    *
+*                                                                      *
+*  Under all circumstances the software shall only be operated under   *
+*  the conditions described in the SAFETY documentation.               *
+*  The software is only allowed to be operated in a surrounding where  *
+*  the safety of the overall system is ensured by the design and the   *
+*  construction of the jig to which the electronic hardware including  *
+*  the stepper motor and the software are mounted to. 
 *                                                                      *
 ************************************************************************
 
