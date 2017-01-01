@@ -3,6 +3,8 @@
 
 This software is used in a screw advance box joint jig as it s shown on the youtube video https://youtu.be/NJFSuEncSqo?list=PLBW3QMLH63V2iZNUMlxDlf6X9UJRqANAe
 
+**Always read the License, especially the extra part on safety and the application of this software. Always read and follow the safety instructions.**   
+
 The project as provided here needs some extra setup work to compile, since it is dependend on other libraries. The process to compile is described in the BUILD.md file in the same directory. The process is not really complicated. Also the programming of the controller is simple and possible without deep knowledge in electronics.
 
 #Note: 
