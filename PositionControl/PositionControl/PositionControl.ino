@@ -2,17 +2,15 @@
  * PositionControl3.ino
  *
  * Created: 4/30/2015 10:11:50 PM
-
- Copyright (c) 2015 Eckart Schlottmann
 Author: Eckart Schlottmann
 
 
-This software is distributed under the terms of the 
-Mozilla Public License Version 2.0
-This licence is disributed alongside with this software or can be 
-obtained from http://mozilla.org/MPL/2.0/
+This software is distributed under the terms of the
+Mozilla Public License Version 2.0 with extensions for safety
+This license is distributed alongside with this software.
 
-Under all thircumstances note the following paragraphs of the license:
+
+Under all circumstances note the following paragraphs of the license:
 
 
 ************************************************************************
@@ -55,7 +53,25 @@ Under all thircumstances note the following paragraphs of the license:
 *  extent applicable law prohibits such limitation. Some               *
 *  jurisdictions do not allow the exclusion or limitation of           *
 *  incidental or consequential damages, so this exclusion and          *
-*  limitation may not apply to You.                                    *
+*  limitation may not apply to You.
+*                                                                      *
+*  Under all circumstances the software shall only be operated under   *
+*  the conditions described in the SAFETY documentation.               *
+*  The software is only allowed to be operated in a surrounding where  *
+*  the safety of the overall system is ensured by the design and the   *
+*  construction of the jig to which the electronic hardware including  *
+*  the stepper motor and the software are mounted.                     *
+*                                                                      *
+*  This software is developed to be used in a jig for a table saw only *
+*  where the jig itself is designed in such a way that it cannot harm  *
+*  a user under any circumstance.                                      *
+*  This means that the design, the construction and the usage of the   *
+*  table saw jig has to be done is such a way that even in case the    *
+*  stepper motor of the jig is operated in any direction in a middle   *
+*  of a cut neither the jig itself or a workpiece in the jig can harm  *
+*  a user.                                                             *
+*  These extra safety regulations need to be taken over to any         *
+*  derived work out of this work.                                      *
 *                                                                      *
 ************************************************************************
 */ 
