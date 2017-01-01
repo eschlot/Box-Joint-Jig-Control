@@ -84,6 +84,7 @@ class MainMenu : public Menu
   virtual void menuIsActivating(void);
   virtual void activate(void);
   virtual void controlMenuOperation();
+  virtual void licenseOperation();
   
   protected:
 

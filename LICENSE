@@ -180,7 +180,9 @@ If You distribute Covered Software in Executable Form then:
 (b) You may distribute such Executable Form under the terms of this
     License, or sublicense it under different terms, provided that the
     license for the Executable Form does not attempt to limit or alter
-    the recipients' rights in the Source Code Form under this License.
+    the recipients' rights in the Source Code Form under this License 
+    
+(c) The SAFETY instructions have to be fully enclosed in the distribution.
 
 3.3. Distribution of a Larger Work
 
@@ -194,6 +196,9 @@ under the terms of such Secondary License(s), so that the recipient of
 the Larger Work may, at their option, further distribute the Covered
 Software under the terms of either this License or such Secondary
 License(s).
+Any Secondary License needs to be extended by the extra paragraph in 
+chapter 7 (Limitation of Liability) and the product needs to include 
+the SAFETY instructions coming with this software.
 
 3.4. Notices
 
@@ -305,6 +310,16 @@ prior to termination shall survive termination.
 *  construction of the jig to which the electronic hardware including  *
 *  the stepper motor and the software are mounted.                     * 
 *                                                                      *
+*  This software is developed to be used in a jig for a table saw only *
+*  where the jig itself is designed in such a way that it cannot harm  *
+*  a user under any circumstance.                                      *
+*  This means that the design, the construction and the usage of the   *
+*  table saw jig has to be done is such a way that even in case the    *
+*  stepper motor of the jig is operated in any direction in a middle   *
+*  of a cut neither the jig itself or a workpiece in the jig can harm  *
+*  a user.                                                             *
+*  These extra safety regulations need to be taken over to any         *
+*  derived work out of this work.                                      * 
 ************************************************************************
 
 8. Litigation
@@ -342,7 +357,8 @@ distinguishing version number.
 You may distribute the Covered Software under the terms of the version
 of the License under which You originally received the Covered Software,
 or under the terms of any subsequent version published by the license
-steward.
+steward, but only when the complete additions added to this license are 
+added to the subsequent version.
 
 10.3. Modified Versions
 

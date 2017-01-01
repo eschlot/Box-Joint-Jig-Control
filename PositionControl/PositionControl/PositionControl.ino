@@ -77,6 +77,7 @@ Under all thircumstances note the following paragraphs of the license:
 #include "Control.h"
 #include "ControlMenu.h"
 #include "IndividualDistributionMenu.h"
+#include "LicenseMenu.h"
 
 // Declare which fonts we will be using
 //extern uint8_t BigFont[];
@@ -121,9 +122,19 @@ IntegerNumberEntryMenu integerNumberEntryMenu(&myGLCD, &myTouch, &myTFT);
 SettingMenu settingMenu(&myGLCD, &myTouch, &myTFT);
 ControlMenu controlMenu(&myGLCD, &myTouch, &myTFT);
 IndividualDistributionMenu individualDistributionMenu(&myGLCD, &myTouch, &myTFT);
+LicenseMenu licenseMenu(&myGLCD,&myTouch, &myTFT);
+
+void watchdogSetup(void)
+{
+  watchdogEnable(500);
+}
 
 void setup()
 {
+//  Serial.begin(9600);
+//  while(!SerialUSB){};
+//  SerialUSB.println("start");
+  watchdogSetup();
   myGLCD.InitLCD(LANDSCAPE);
   myGLCD.clrScr();
   myGLCD.setFont(SmallFont);
@@ -142,25 +153,29 @@ void setup()
   integerNumberEntryMenu.menuSetup();
   controlMenu.menuSetup();
   individualDistributionMenu.menuSetup();
+  licenseMenu.menuSetup();
   
   controlSystem.ini();
   mainMenu.menuActivate();
+  watchdogReset();
 }
 
 void loop()
 {
   // Run all menus
-  
+
   mainMenu.menuDo();
   settingMenu.menuDo();
   programMenu.menuDo();
   linearDistributionMenu.menuDo();
   individualDistributionMenu.menuDo();
+  licenseMenu.menuDo();
   floatNumberEntryMenu.menuDo();
   integerNumberEntryMenu.menuDo();
   controlMenu.menuDo();
   controlMenu.run();
   
+  watchdogReset();
   controlSystem.run();
 }
 

@@ -64,7 +64,7 @@ Under all circumstances note the following paragraphs of the license:
 
 enum
 {
-  BUTTON_SETTING, BUTTON_PROGRAM, BUTTON_CONTROL
+  BUTTON_SETTING, BUTTON_PROGRAM, BUTTON_CONTROL, BUTTON_LICENSE
 };
 
 #define NUMBER_OF_LAYOUT_LINES  4
@@ -87,6 +87,7 @@ LINE(y)+NUMBER_BUTTON_HEIGHT
 #define BUTTON_SETTING_COORDS BUTTON_COORDS(0,0)
 #define BUTTON_PROGRAM_COORDS BUTTON_COORDS(1,0)
 #define BUTTON_CONTROL_COORDS BUTTON_COORDS(2,0)
+#define BUTTON_LICENSE_COORDS BUTTON_COORDS(2,3)
 
 #define GROOVEPICTURE_POSITION 0, LINE(2)+BUTTON_LINE_OFFSET, SCREEN_WIDTH, NUMBER_BUTTON_HEIGHT
 
@@ -95,7 +96,8 @@ LINE(y)+NUMBER_BUTTON_HEIGHT
 menuButtonType mainMenuButton[] = {
 SPECIALBUTTONDEF(BUTTON_SETTING,Settings),
 SPECIALBUTTONDEF(BUTTON_PROGRAM,Program),
-SPECIALBUTTONDEF(BUTTON_CONTROL,Control), };
+SPECIALBUTTONDEF(BUTTON_CONTROL,Control),
+SPECIALBUTTONDEF(BUTTON_LICENSE,License)};
 
 MainMenu::MainMenu(UTFT *Disp, URTouch *Touch, TFT_Extension *TFTextention)
     : Menu(Disp, Touch, TFTextention)
@@ -131,6 +133,8 @@ void MainMenu::dispatch(uint8_t buttonNumber)
     case BUTTON_CONTROL:
       this->controlMenuOperation();
       break;
+    case BUTTON_LICENSE:
+      this->licenseOperation();
   }
 }
 
@@ -152,6 +156,12 @@ void MainMenu::controlMenuOperation()
   this->menuDeactivate();
   controlMenu.menuActivate();
 
+}
+
+void MainMenu::licenseOperation()
+{
+  this->menuDeactivate();
+  licenseMenu.menuActivate();
 }
 
 void MainMenu::activate(void)

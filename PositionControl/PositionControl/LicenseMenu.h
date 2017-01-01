@@ -1,7 +1,7 @@
 /*
- * PositionControl.h
- *
- * Created: 05.05.2015 21:50:52
+* MainMenu.h
+*
+* Created: 02.05.2015 23:00:39
 Copyright (c) 2015 Eckart Schlottmann
 Author: Eckart Schlottmann
 
@@ -57,41 +57,45 @@ Under all thircumstances note the following paragraphs of the license:
 *  limitation may not apply to You.                                    *
 *                                                                      *
 ************************************************************************
- */ 
+
+*/
 
 
-#ifndef POSITIONCONTROL_H_
-#define POSITIONCONTROL_H_
+#ifndef __LICENSEMENU_H__
+#define __LICENSEMENU_H__
+#include "Menu.h"
+#include "LinkedObjectList.h"
+#include "LinkedList.h"
+#include "LicenseLineInfo.h"
 
-#include <UTFT.h>
-#include <memorysaver.h>
-#include <TFT_Extension.h>
-#include <URTouchCD.h>
-#include <URTouch.h>
+class LicenseMenu : public Menu
+{
+  //variables
+  public:
+  protected:
+  private:
+      int pageNumber;
 
-#include "SettingMenu.h"
-#include "MainMenu.h"
-#include "ProgramMenu.h"
-#include "LinearDistributionMenu.h"
-#include "FloatNumberEntryMenu.h"
-#include "IntegerNumberEntryMenu.h"
-#include "NVM.h"
-#include "Control.h"
-#include "ControlMenu.h"
-#include "IndividualDistributionMenu.h"
-#include "LicenseMenu.h"
+    LinkedObjectList<LicenseLineInfo*> *lineBreakList;
+    LinkedList<int> *linePosList;
 
-extern MainMenu mainMenu;
-extern ProgramMenu programMenu;
-extern LinearDistributionMenu linearDistributionMenu;
-extern FloatNumberEntryMenu floatNumberEntryMenu;
-extern IntegerNumberEntryMenu integerNumberEntryMenu;
-extern SettingMenu settingMenu;
-extern NVM nvm;
-extern ControlSystem controlSystem;
-extern ControlMenu controlMenu;
-extern IndividualDistributionMenu individualDistributionMenu;
-extern LicenseMenu licenseMenu;
+  //functions
+  public:
+  LicenseMenu(UTFT *Disp, URTouch *Touch,TFT_Extension *TFTextention);
+  virtual ~LicenseMenu(void);
 
+  virtual void dispatch(uint8_t buttonNumber);
+  virtual void menuIsActivating(void);
+  
+  virtual void mainMenuOperation(void);
+  virtual void drawtext(void);
 
-#endif /* INCFILE1_H_ */
+  protected:
+
+  private:
+  LicenseMenu( const LicenseMenu &c );
+  LicenseMenu& operator=( const LicenseMenu &c );
+	
+}; //MainMenu
+
+#endif //__MAINMENU_H__
