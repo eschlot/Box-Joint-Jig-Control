@@ -7,6 +7,7 @@ This software is used in a screw advance box joint jig as it s shown on the yout
 
 The project as provided here needs some extra setup work to compile, since it is dependend on other libraries. The process to compile is described in the BUILD.md file in the same directory. The process is not really complicated. Also the programming of the controller is simple and possible without deep knowledge in electronics.
 
+
 #Note: 
 This software is not a product. By compiling this software and bringing it to a concrete micro controller and operating some hardware based on this it may be used within a product. You have full responsibility over the complete product when You set up such a system. Read the license for details.
 
