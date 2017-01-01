@@ -303,7 +303,7 @@ prior to termination shall survive termination.
 *  The software is only allowed to be operated in a surrounding where  *
 *  the safety of the overall system is ensured by the design and the   *
 *  construction of the jig to which the electronic hardware including  *
-*  the stepper motor and the software are mounted to. 
+*  the stepper motor and the software are mounted.                     * 
 *                                                                      *
 ************************************************************************
 
