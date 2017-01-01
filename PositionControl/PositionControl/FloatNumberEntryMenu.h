@@ -8,7 +8,7 @@ Author: Eckart Schlottmann
 
 This software is distributed under the terms of the 
 Mozilla Public License Version 2.0 with extensions for safety
-This licence is distributed alongside with this software 
+This licence is distributed alongside with this software. 
 
 
 Under all circumstances note the following paragraphs of the license:
