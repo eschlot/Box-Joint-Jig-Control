@@ -37,6 +37,10 @@ This software reqires some other open source software packages. Without the cont
 7. LinkedList (Autor: Ivan Seidel under MIT License): for the internal handling of the entered data and the calculated positions for the cuts.
 
 
+#Hardware
+Details on the hardware can be found here:
+https://workshop-es.blogspot.de/2017/01/the-electronic-for-cnc-box-joint-jig.html
+
 
 
 
