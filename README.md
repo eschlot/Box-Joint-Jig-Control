@@ -46,6 +46,10 @@ https://workshop-es.blogspot.de/2017/01/the-electronic-for-cnc-box-joint-jig.htm
 Further comments on the software structure and development can be found here: 
 https://workshop-es.blogspot.de/2017/01/the-software-for-electronic-cnc-box.html
 
+#Using the jig
+How to use the jig is described on Youtube and details on how to use it for exact results can be found here:
+https://workshop-es.blogspot.de/2017/01/using-electronic-cnc-box-joint-jig-on.html
+
 
 
 
