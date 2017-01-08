@@ -41,6 +41,12 @@ This software reqires some other open source software packages. Without the cont
 Details on the hardware can be found here:
 https://workshop-es.blogspot.de/2017/01/the-electronic-for-cnc-box-joint-jig.html
 
+#Sotware
+
+Further comments on the software structure and development can be found here: 
+https://workshop-es.blogspot.de/2017/01/the-software-for-electronic-cnc-box.html
+
+
 
 
 
